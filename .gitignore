@@ -1,0 +1,260 @@
+# ============================================================================
+# CivicLegal AI - Strict .gitignore for Python (FastAPI) + React (Vite)
+# ============================================================================
+
+# ---- PYTHON ----
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+.env.local
+.env.*.local
+*.venv
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# FastAPI / uvicorn
+*.asgi
+
+# ---- NODEJS / REACT / VITE ----
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Production
+dist/
+build/
+.next/
+out/
+
+# Misc
+.DS_Store
+.vscode-test
+.cache
+.eslintcache
+.turbo
+
+# Local env files
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# Storybook files
+storybook-static/
+
+# Vite
+.vite/
+
+# ---- IDE / EDITOR ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+.IntelliJIdea*
+.atom/
+.vscode-test
+.eslintcache
+.stylelintcache
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+Desktop.ini
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+$RECYCLE.BIN/
+
+# ---- BUILD / TEMP ----
+.turbo/
+.cache/
+temp/
+tmp/
+*.tmp
+
+# ---- SECRETS & CREDENTIALS (CRITICAL) ----
+# Never commit these files
+*.pem
+*.key
+*.pfx
+*.p12
+*.jks
+keystore.xml
+secrets.json
+.aws/credentials
+.aws/config
+~/.ssh/
+id_rsa
+id_rsa.pub
+.netrc
+.kube/config
+.docker/config.json
+PAT_TOKEN
+API_KEY
+SECRET_KEY
+PRIVATE_KEY
+
+# ---- MONGODB / DATABASE ----
+*.mongodb
+mongo_data/
+database/
+*.db
+*.sql
+
+# ---- n8n (Workflows local - no cometer archivos sin versionado)
+.n8n/
+n8n_data/
+
+# ---- DOCKER (Local volumes, cache, artifacts)
+docker-compose.override.yml
+.docker/
+
+# ============================================================================
+# Excepciones (archivos que SÍ se comitean, si los patrones above los excluyen)
+# ============================================================================
+# (Aquí irían !pattern si necesitamos re-incluir algo, p.ej., un ejemplo de fixture)
+# !docs/**/*.example.json
